@@ -5,7 +5,9 @@
 
 source "http://rubygems.org"
 
-#gem "veewee", :path => "."
+gem "fog", "1.8"
+gem "vagrant", "1.0.7"
+gem "veewee", :path => "."
 #gem "fission", :path => '/Users/patrick/dev/fission'
 
 group :kvm do

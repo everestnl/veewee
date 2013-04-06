@@ -7,6 +7,7 @@ source "http://rubygems.org"
 
 gem "fog", "1.8"
 gem "vagrant", "1.0.7"
+gem "vagrant-windows"
 gem "veewee", :path => "."
 #gem "fission", :path => '/Users/patrick/dev/fission'
 

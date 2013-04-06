@@ -1,3 +1,8 @@
+#status
+Dit is een fork van veewee met een vbox build voor Everest.
+Onder windows vind de opstartende vm de shell scripts niet.
+Onder gevirtualiseerde Linux kan niet een embedded 64 bit virtualbox worden gedraaid om te builden. 
+
 #installeer
 sudo apt-get install dkms linux-headers-`uname -r`
 

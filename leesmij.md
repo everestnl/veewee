@@ -17,9 +17,11 @@ sudo dpkg --install virt[..tab..].deb
     gem install bundler  
     bundle install
 
-Run het volgende commando om een vbox te builden op basis van de definitie in `definitions/everprecise64`
+Run het volgende commando om een vbox te builden op basis van de definitie in `definitions/everprecise64`  
     bundle exec vagrant basebox build 'everprecise64'
 
+    bundle exec vagrant basebox export 'everprecise64'
+De vbox file is nu in de . directory te vinden.
 
 #pro memorie
 De initiele versie van die definitie is gegenereerd met

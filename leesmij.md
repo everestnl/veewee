@@ -11,13 +11,18 @@ Onder gevirtualiseerde Linux kan niet een embedded 64 bit virtualbox worden gedr
 sudo dpkg --install virt[..tab..].deb
 
     curl -L https://get.rvm.io | bash -s stable --rails --autolibs=enabled  --ruby=1.9.3  
+    cd veewee
     rvm use 1.9.3
 
     gem install bundler  
     bundle install
 
+Run het volgende commando om een vbox te builden op basis van de definitie in `definitions/everprecise64`
+    bundle exec vagrant basebox build 'everprecise64'
+
+
+#pro memorie
+De initiele versie van die definitie is gegenereerd met
     bundle exec vagrant basebox templates
 
-    bundle exec basebox define 'everprecise64' 'ubuntu-12.04.02-server-amd64'
-
-    bundle exec basebox build 'everprecise64'
+    bundle exec vagrant basebox define 'everprecise64' 'ubuntu-12.04.02-server-amd64'
